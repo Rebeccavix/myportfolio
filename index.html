@@ -43,7 +43,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 1rem 0;
-            animation: fadeInUp 1s ease;
+            animation: fadeInDown 1s ease;
         }
 
         .logo {
@@ -80,13 +80,13 @@
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
-            animation: fadeInUp 1s ease;
+            animation: fadeInDown 1s ease;
         }
 
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
-            animation: fadeInUp 1s ease 0.2s both;
+            animation: fadeInDown 1s ease 0.2s both;
         }
 
         .btn {
@@ -98,11 +98,12 @@
             border-radius: 5px;
             font-weight: 500;
             transition: background 0.3s ease;
-            animation: fadeInUp 1s ease 0.4s both;
+            animation: fadeInDown 1s ease 0.4s both;
         }
 
         .btn:hover {
             background: #ec96c9;
+            animation: fadeInDown 1s ease;
         }
 
         /* Sections */
@@ -120,7 +121,7 @@
         /* About Section */
         .about {
             background: transparent;
-            animation: fadeInUp 1s ease;
+            animation: fadeInDown 1s ease;
         }
 
         .about-content {
@@ -153,14 +154,14 @@
         .download-content h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            animation: fadeInUp 1s ease;
+            animation: fadeInDown 1s ease;
         }
 
         .download-content p {
             font-size: 1.1rem;
             margin-bottom: 2rem;
             opacity: 0.9;
-            animation: fadeInUp 1s ease 0.2s both;
+            animation: fadeInDown 1s ease 0.2s both;
         }
 
         .download-btn {
@@ -170,7 +171,6 @@
             font-size: 1.1rem;
             padding: 15px 40px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            animation: fadeInUp 1s ease 0.4s both;
         }
 
         .download-btn:hover {
@@ -303,7 +303,7 @@
         /* Footer */
         footer {
             background: #e6d4c1;
-            color: white;
+            color: gray;
             text-align: center;
             padding: 2rem 0;
         }
@@ -313,6 +313,18 @@
             from {
                 opacity: 0;
                 transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
             }
 
             to {
@@ -411,8 +423,8 @@
             <div class="download-content">
                 <h2><span style="filter: hue-rotate(270deg);">💼</span> View Resume (PDF)</h2>
                 <p>Gain insight into my professional journey and capabilities.</p>
-                <a href="/files/cv/Rebecca dela Cruz CV.pdf" download class="btn download-btn">
-                    📥 Download CV
+                <a href="/files/Rebecca dela Cruz - CV.pdf" download class="btn download-btn">
+                    <span style="filter: hue-rotate(70deg);">📥</span> Download CV
                 </a>
             </div>
         </div>
@@ -478,14 +490,18 @@
                     <div class="contact-item">
                         <a href="https://github.com/Rebeccavix/" class="contact-icon" target="_blank"><span
                                 style="filter: hue-rotate(270deg);">🧑‍💻</span></a>
+                        <a href="https://github.com/Rebeccavix/" target="_blank">GitHub</a>
                     </div>
                     <div class="contact-item">
                         <a href="mailto:rebeccadc8@outlook.com" class="contact-icon" target="_blank"><span
                                 style="filter: hue-rotate(270deg);">📧</span></a>
+                        <a href="mailto:rebeccadc8@outlook.com" target="_blank">Email</a>
                     </div>
                     <div class="contact-item">
                         <a href="https://www.linkedin.com/in/rebeccadelacruz/" class="contact-icon"
                             target="_blank"><span style="filter: hue-rotate(270deg);">🔗</span></a>
+                        <a href="https://www.linkedin.com/in/rebeccadelacruz/" target="_blank">Linkedin</a>
+                        </a>
                     </div>
                 </div>
             </div>
